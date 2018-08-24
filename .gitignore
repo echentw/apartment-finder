@@ -90,5 +90,5 @@ ENV/
 
 # Project specific
 .idea/
-private.py
+# private.py
 listings.db
