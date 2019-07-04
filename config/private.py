@@ -9,3 +9,6 @@ BOXES = {
     [37.809289,-122.463277]
   ]
 }
+
+MIN_BEDROOMS = 3
+MAX_BEDROOMS = 3

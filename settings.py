@@ -114,6 +114,9 @@ SLACK_CHANNEL = "#housing"
 # Should be put in private.py, or set as an environment variable.
 SLACK_TOKEN = os.getenv('SLACK_TOKEN', "")
 
+MIN_BEDROOMS = 3
+MAX_BEDROOMS = 3
+
 # Any private settings are imported here.
 try:
     from private import *
