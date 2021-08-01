@@ -3,3 +3,5 @@ sqlalchemy
 python-dateutil
 ipython
 slackclient
+
+requests>=2.26.0
