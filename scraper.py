@@ -57,7 +57,7 @@ def scrape_area(area):
     )
 
     results = []
-    gen = cl_h.get_results(sort_by='newest', geotagged=True, limit=20)
+    gen = cl_h.get_results(sort_by='newest', geotagged=True, limit=100)
     while True:
         try:
             result = next(gen)
@@ -86,6 +86,9 @@ def scrape_area(area):
             else:
                 result["area"] = ""
                 result["bart"] = ""
+
+            if result['area'] == '' or result['area_found'] is False:
+                continue
 
             # Try parsing the price.
             price = 0
